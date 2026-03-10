@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIK | The Art of the Strike</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark-wood: #2c1e14;
+            --parchment: #f4e4bc;
+            --deep-red: #8b0000;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--dark-wood);
+            color: var(--parchment);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--gold);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'MedievalSharp', cursive;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 10px var(--gold);
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1615529328331-f8917597711f?q=80&w=2070&auto=format&fit=crop'); /* Wood texture placeholder */
+            background-size: cover;
+            border-bottom: 5px double var(--gold);
+        }
+
+        .hero h1 { font-size: 5rem; margin-bottom: 0; }
+        .hero p { font-size: 1.5rem; font-style: italic; }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid var(--gold);
+            margin-bottom: 40px;
+        }
+
+        /* Help Page / Rules */
+        .rule-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rule-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+        }
+
+        /* Expansion Ad */
+        .expansion-banner {
+            background: var(--deep-red);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border: 4px ridge var(--gold);
+            transform: rotate(-1deg);
+        }
+
+        .btn {
+            background: var(--gold);
+            color: var(--dark-wood);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: scale 0.2s;
+        }
+
+        .btn:hover { scale: 1.05; background: #e2bc77; }
+
+        
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">The Legend</a>
+        <a href="#help">How to Play</a>
+        <a href="#expansion">Expansions</a>
+    </nav>
+
+    <div class="hero">
+        <h1>FLIK</h1>
+        <p>Handcrafted Wood. Pure Strategy. Medieval Chaos.</p>
+    </div>
+
+    <section id="about">
+        <h2>The Legend of Flik</h2>
+        <div class="card">
+            <p>Flik isn't just a game; it's a test of steady hands and tactical brilliance. Born from the tradition of tabletop skirmishes, every board is hand-carved to ensure a unique friction and speed. Whether you're defending your castle or sieging your opponent's ranks, every flick counts.</p>
+        </div>
+    </section>
+
+    <section id="help">
+        <h2>Master the Flick</h2>
+        <div class="card">
+            <h3>The Golden Rules</h3>
+            <ul class="rule-list">
+                <li><strong>The Strike:</strong> Use only one finger to propel your piece.</li>
+                <li><strong>Collision:</strong> If you knock an enemy piece off the board, it is removed from play.</li>
+                <li><strong>The Boundary:</strong> Any piece that crosses the carved perimeter is considered "In Exile."</li>
+                <li><strong>Victory:</strong> Be the last House standing on the timber.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="expansion">
+        <div class="expansion-banner">
+            <h2>NEW: Siege & Sorcery Pack</h2>
+            <p>Introducing weighted "Catapult" pieces and the "Ice Glaze" board modifier. Level up your game with 12 new hand-painted tokens.</p>
+            <a href="#" class="btn">CLAIM YOUR REWARDS</a>
+        </div>
+    </section>
+    <section id="gallery">
+    <h2>The Armory</h2>
+    <div class="gallery-grid">
+        <div class="card">
+            <img src="your-board-image-1.jpg" alt="Flik Board Close-up" style="width:100%; border-radius:4px;">
+            <p>The Standard Oak Battlefield</p>
+        </div>
+        <div class="card">
+            <img src="your-board-image-2.jpg" alt="Flik Pieces" style="width:100%; border-radius:4px;">
+            <p>Hand-Polished Striker Pieces</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Add this inside your <style> tag to make the gallery look pro */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+</style>
+    <footer>
+        &copy; 2026 Flik Tabletop Games. Crafted with honor in Troy, MI.
+    </footer>
+
+</body>
+</html>
