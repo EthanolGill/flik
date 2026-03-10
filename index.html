@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="assets/towerupdate.png">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
     <style>
+        /* Color Palette */
         :root {
             --gold: #c5a059;
             --dark-wood: #2c1e14;
@@ -14,6 +15,7 @@
             --deep-red: #8b0000;
         }
 
+        /* Global Styles */
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
@@ -22,6 +24,7 @@
             scroll-behavior: smooth;
         }
 
+        /* Headings with a medieval flair */
         h1, h2, h3 {
             font-family: 'Cinzel', serif;
             color: var(--gold);
@@ -43,6 +46,7 @@
             height: 0 !important;
         }
 
+        /* This keeps the scrollbar space reserved to prevent layout shifts when it appears/disappears */
         html {
             scrollbar-gutter: stable;
         }
@@ -61,6 +65,7 @@
             gap: 30px;
         }
 
+        /* This is the key part that hides the scrollbar but keeps the space */
         nav a {
             color: var(--gold);
             text-decoration: none;
@@ -69,6 +74,7 @@
             transition: 0.3s;
         }
 
+        /* Add a subtle glow on hover for that medieval magic feel */
         nav a:hover {
             text-shadow: 0 0 10px var(--gold);
             color: #fff;
@@ -88,6 +94,7 @@
             border-bottom: 5px double var(--gold);
         }
 
+        /* Hero Text */
         .hero h1 { font-size: 5rem; margin-bottom: 0; }
         .hero p { font-size: 1.5rem; font-style: italic; }
 
@@ -234,14 +241,16 @@
         <div class="expansion-banner">
             <h2>Expansions on the Horizon</h2>
             <p>We need your help to keep the game of Flik alive and thriving. Please let us know about any characters you would like to see! Your input is invaluable to us.</p>
-            <a href="#" class="btn">Reach Out</a>
+            <a href="mailto:flik.inquiries@gmail.com?subject=Expansion Ideas for Flik" class="btn">Reach Out</a>
+            <p style="margin-top: 20px; font-size: 0.6rem;">Email us at flik.inquiries@gmail.com if the your browser doesn't open your email client automatically.</p>
         </div>
     </section>
 
     <section id="store">
         <div class="store-banner">
             <h2><strong>Ready to bring Flik home? Secure your handcrafted copy today!</strong></h2>
-            <a href="#" class="btn">Purchase Now</a>
+            <a href="mailto:flik.inquiries@gmail.com?subject=Purchase Inquiry for Flik" class="btn">Purchase Now</a>
+            <p style="margin-top: 20px; font-size: 0.6rem; color: var(--gold);">Email us at flik.inquiries@gmail.com if the your browser doesn't open your email client automatically.</p>
         </div>
     </section>
 
