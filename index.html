@@ -29,6 +29,24 @@
             letter-spacing: 2px;
         }
 
+        /* This targets the entire window in Chrome, Edge, and Safari */
+        html, body {
+            scrollbar-width: none; /* For Firefox */
+            -ms-overflow-style: none; /* For IE/Edge */
+        }
+
+        /* This specifically kills the bar in Chrome/Safari */
+        html::-webkit-scrollbar, 
+        body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        html {
+            scrollbar-gutter: stable;
+        }
+
         /* Navigation */
         nav {
             background: rgba(0, 0, 0, 0.8);
@@ -230,7 +248,7 @@
     }
 </style>
     <footer>
-        &copy; 2026 GH Tabletop Games. Crafted with honor in Troy, MI.
+        &copy; 2026 GH Tabletop Games. Crafted with pride in Troy, MI.
     </footer>
 
 </body>
